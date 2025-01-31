@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Block Blast</title>
+  <link rel="stylesheet" href="myBlokBlast.css">
+</head>
+<body onload="startGame()"> 
+  <div class="tabs">
+    <a href="MainPage.html" class="tab-link">Home</a>
+    <a href="myDog.html" class="tab-link">My dog </a>
+    <a href="myCity.html" class="tab-link">My city</a>
+  </div>
+
+
+  <h1>Matan Amram Block Blast</h1>
+  <label for="size">Size:</label>
+  <input type="range" id="size" min="5" max="15" onclick="startGame()">
+  <h2 id="score">Score: 0</h2>
+  <div id="board" class="board"></div>
+  <div id="shapes-container" class="shapes-container"></div>
+  <button class="button" id="restart" style="visibility: hidden;" onclick="startGame()">Restart</button>
+  <script src="myBlockBlast.js"></script>
+</body>
+</html>

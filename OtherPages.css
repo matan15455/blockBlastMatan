@@ -1,0 +1,102 @@
+/* סגנון לגוף הדף */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #1a1a1a, #00890b);
+    color: #fff;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* כרטיסיות ניווט */
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.tab-link {
+    padding: 14px 35px;
+    background-color: #008b8d; /* צבע כתום חמים */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tab-link:hover {
+    background-color: #777777; /* צבע כתום כהה */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+}
+
+/* סגנון לתוכן הדף */
+.main-content {
+    display: flex;
+    flex-direction: column; /* העברת התמונות והטקסט לעמודה */
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* סגנון לתוכן הטקסט */
+.text-content {
+    max-width: 600px; /* הגבלת רוחב לטקסט */
+    flex: 1;
+}
+
+/* סגנון לכותרת ראשית */
+h1 {
+    font-size: 42px;
+    color: #fff;
+    margin: 20px 0;
+    text-shadow: 3px 3px 0px #333, 5px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* סגנון לכותרות משניות */
+h2 {
+    font-size: 24px;
+    color: #f2f2f2;
+    margin: 15px 0;
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+/* סגנון לתמונה */
+.image-content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    flex: 1;
+    width: 100%; /* מאפשר לתמונות להתפשט לגודל הלקוח */
+    max-width: 900px; /* הגבלת רוחב התמונות */
+}
+
+.profile-image {
+    border-radius: 12px;
+    width: 100%; /* תופס 100% מהמרחב הזמין */
+    max-width: 250px; /* מקסימום 250px רוחב לכל תמונה */
+    height: auto;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.profile-image:hover {
+    transform: scale(1.05);
+}
